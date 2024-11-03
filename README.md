@@ -36,3 +36,22 @@ VS code, Chat GPT
 **Implimentation**
 
 Using VS Code
+
+**Screenshots**
+
+![Screenshot1](https://github.com/MEV1N/Trustworthy-GPS/blob/main/Wrong%20GPS/Screenshot%202024-11-03%20061003.png)
+
+shows the main page with user input
+
+
+![Screenshot2](https://github.com/MEV1N/Trustworthy-GPS/blob/main/Wrong%20GPS/Screenshot%202024-11-03%20061039.png)
+
+shows the main page
+
+
+![Screenshot3](https://github.com/MEV1N/Trustworthy-GPS/blob/main/Wrong%20GPS/Screenshot%202024-11-03%20061105.png)
+
+shows the page which shows the map
+
+video:
+https://drive.google.com/file/d/1Rp_a_CN4NsgYCqmrDQtKxreK5kk2oCaw/view?usp=drive_link
