@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Map Directions</title>
+    <link rel="stylesheet" href="styless.css">
+    <script>
+        function displayRandomMap() {
+            // Array of map URLs
+            const mapUrls = [
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.5775229983437!2d72.98584317474753!3d5.861491494121998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b6b6c746c60fcd7%3A0xf6294db2a7c95e17!2sSea%20of%20Stars!5e1!3m2!1sen!2sin!4v1730582967450!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.7900930925016!2d15.289814475148642!3d-24.759273177995443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c720eb85269ca25%3A0x91e505d54330767b!2sDeadvlei!5e1!3m2!1sen!2sin!4v1730583039256!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7939.4327287043225!2d-134.55616292125288!3d58.44094503713876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5400e4eba2eeab11%3A0xc72817f944e14b91!2sMendenhall%20Glacier!5e1!3m2!1sen!2sin!4v1730583099683!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12562.104316757726!2d123.19247805614513!3d-34.0949990702507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a5ea265f67dad97%3A0xfdbcca913bacc932!2sLake%20Hillier!5e1!3m2!1sen!2sin!4v1730583299644!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6820.215974234372!2d111.20550051398831!3d24.511137677684435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36a673418297e02b%3A0x8800a9f7f6413078!2sTianzi%20Mountain!5e1!3m2!1sen!2sin!4v1730583359766!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.3138936613823!2d75.6497695755737!3d35.29505147271426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e466155555554f%3A0xfe59ca1143e9479!2sConcordia%20Motel%20Baltistan!5e1!3m2!1sen!2sin!4v1730583494781!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.340695768035!2d50.11876427520157!3d26.282922277028174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e6dfeb88f141%3A0xb727d448a171b9c1!2sRub%20Alkhali%20St%2C%20Dhahran%2034472%2C%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1730583616503!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29812.800858348623!2d142.49267019712582!3d-10.689090884637777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x69b00f9a08fb84eb%3A0x3db014d25bb26c65!2sCape%20York!5e1!3m2!1sen!2sin!4v1730583665070!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419647.015988426!2d-73.94527980713534!3d82.02007513258835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4fc537b363686b65%3A0xe1eae7aa082bf153!2sQuttinirpaaq%20National%20Park!5e1!3m2!1sen!2sin!4v1730583820836!5m2!1sen!2sin",
+
+            ];
+
+            // Select a random map URL from the array
+            const randomMapUrl = mapUrls[Math.floor(Math.random() * mapUrls.length)];
+
+            // Set the iframe's src attribute to the selected map URL
+            document.getElementById("mapIframe").src = randomMapUrl;
+        }
+    </script>
+</head>
+<body onload="displayRandomMap()">
+ <div id="main">
+    <h1>Directions</h1>
+    <h4>Have a good journey!</h4>
+    <div id="Map">
+        <iframe id="mapIframe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+</body>
+</html>

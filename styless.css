@@ -1,0 +1,24 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #fbfbfbb0;
+    background-image: url(Map\ 2.jpeg); /* Ensure the image path is correct */
+    background-repeat: no-repeat;
+    background-size: 100% 110%; /* This ensures the image covers the entire page */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-position: center; /* Centers the image */
+}
+#main{
+    padding: 50px;;
+}
+h1{
+    color: white;
+    
+
+}
+h4{
+    color: white;
+    
+}
